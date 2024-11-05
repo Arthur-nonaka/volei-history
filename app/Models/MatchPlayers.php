@@ -8,7 +8,7 @@ class MatchPlayers extends Model
 {
     protected $table = 'match_players';
 
-    protected $fillable = ['match_id', 'player_id', 'attack_in', 'attack_out', 'block', 'serve_in', 'serve_out', 'dig', 'recieve', 'missed_recieve', 'missed_dig'  ];
+    protected $fillable = ['match_id', 'player_id', 'attack_in', 'attack_out', 'block', 'block_out', 'serve_in', 'serve_out', 'dig', 'recieve', 'missed_recieve', 'missed_dig'  ];
 
     public function match()
     {

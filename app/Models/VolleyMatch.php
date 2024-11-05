@@ -8,7 +8,7 @@ class VolleyMatch extends Model
 {
     protected $table = 'match';
 
-    protected $fillable = ['team1_id', 'team2_id'];
+    protected $fillable = ['team1_id', 'team2_id', 'date'];
 
     public function team1()
     {

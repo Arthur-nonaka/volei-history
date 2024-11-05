@@ -24,6 +24,7 @@ return new class extends Migration
             $table->integer('attack_in');
             $table->integer('attack_out');
             $table->integer('block');
+            $table->integer('block_out');
             $table->integer('serve_in');
             $table->integer('serve_out');
             $table->integer('dig');

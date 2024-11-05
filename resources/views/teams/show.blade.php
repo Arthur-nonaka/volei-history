@@ -96,7 +96,7 @@
 
         <div class="create-form" style="transform: translatey(-50px)" id="createFormContainerMatch">
             <button class="toggle-button" onclick="toggleFormMatch()">|||</button>
-            <h2>Nova Partida Contra</h2>
+            <h2>Partida Contra</h2>
             @if ($errors->any())
                 <div>
                     <ul>
@@ -116,6 +116,10 @@
                             @endif
                         @endforeach
                     </select>
+                </div>
+                <div>
+                    <label for="date"> Data </label>
+                    <input type="date" id="date" name="date" required>
                 </div>
                 <button type="submit">Add</button>
             </form>
