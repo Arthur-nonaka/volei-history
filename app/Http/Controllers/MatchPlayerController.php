@@ -23,5 +23,20 @@ class MatchPlayerController extends Controller
             'player_id' => 'required|exists:players:id',
         ]);
         
+        MatchPlayers::create([
+            'attack_in' => $request->attack_in,
+            'attack_out' => $request->attack_out,
+            'block' => $request->block,
+            'block_out' => $request->block_out,
+            'serve_in' => $request->serve_in,
+            'serve_out' => $request->serve_out,
+            'dig' => $request->dig,
+            'recieve' => $request->recieve,
+            'missed_recieve' => $request->missed_recieve,
+            'missed_dig' => $request->missed_dig,
+            'match_id' => $request->match_id,
+            'player_id'=> $request->player_id,
+        ]);
+
     }
 }
